@@ -3,8 +3,9 @@ var socket = require('socket.io');
 
 // App setup
 var app = express();
-var server = app.listen(4000, function(){
-    console.log('listening for requests on port 4000,');
+app.set('port', (process.env.PORT || 5000));
+var server = app.listen(app.get('port'), function(){
+    console.log('listening for requests on port 5000,');
 });
 
 // Static files
@@ -23,3 +24,4 @@ io.on('connection', (socket) => {
     });
 
 });
+
