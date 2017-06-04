@@ -1,0 +1,8 @@
+{
+    "name" : "Node.JS Getting Started",
+    "description" : "",
+    "repository" : "https://github.com/Rohitgird/chat_app",
+    "logo" : "",
+    "keywords" : ["node", "express", "static", "socket"],
+    "image": "heroku/nodejs"
+}
